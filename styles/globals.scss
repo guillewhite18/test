@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --small-text-14: "Open Sans";
+  --h2: Caveat;
+  --texto-boton: "Source Sans Pro";
+
+  /* font sizes */
+  --small-text-14-size: 14px;
+  --font-size-smi: 13px;
+  --texto-boton-size: 15px;
+  --font-size-lg: 18px;
+  --h2-size: 80px;
+
+  /* Colors */
+  --color-white: #fff;
+  --a: #3f454a;
+  --color-gray: #24272a;
+  --color-goldenrod: #d8ad3d;
+  --cfcfcf: #cfcfcf;
+  --gray-6: #f8f8f8;
+
+  /* Border radiuses */
+  --br-3xs: 10px;
+
+  /* Effects */
+  --shadow-box: 0px 4px 40px rgba(0, 0, 0, 0.07);
+}

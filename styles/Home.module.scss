@@ -1,0 +1,640 @@
+.ejercicioFrontEndChild {
+  position: absolute;
+  top: 691px;
+  left: 137px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-box);
+  width: 274px;
+  
+}
+.b21Icon,
+.heroFondoChild {
+  position: absolute;
+  left: 0;
+  width: 1440px;
+}
+.b21Icon {
+  top: 0;
+  height: 741px;
+  object-fit: cover;
+}
+
+.linkButton {
+  text-transform: uppercase; 
+  color: black; 
+  text-decoration: none; 
+  background: none; 
+  border: none; 
+  cursor: pointer; 
+  transition: color 0.3s; 
+}
+
+.linkButton:hover {
+  color: goldenrod; 
+}
+
+
+
+
+.heroFondoChild {
+  top: 512.72px;
+  background: linear-gradient(
+    0deg,
+    #fff,
+    #fff 34.38%,
+    rgba(255, 255, 255, 0.71) 66.15%,
+    rgba(255, 255, 255, 0.07),
+    rgba(255, 255, 255, 0)
+  );
+  height: 228.28px;
+}
+.heroFondo,
+.maskGroupIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1440px;
+  height: 741px;
+}
+.maskGroupIcon {
+  top: 3421px;
+  left: 1457px;
+  width: 652px;
+  height: 598.88px;
+  object-fit: cover;
+  display: none;
+}
+.ejercicioFrontEndItem {
+  position: absolute;
+  top: 2409px;
+  left: 0;
+  background-color: var(--gray-6);
+  width: 1440px;
+  height: 634px;
+  display: none;
+}
+.groupChild,
+.groupItem {
+  position: relative;
+  left: 0;
+  width: 270px;
+}
+.groupChild {
+  top: 0;
+  border-radius: var(--br-3xs) var(--br-3xs) 0 0;
+  height: 204px;
+  object-fit: cover;
+}
+.groupItem {
+  top: 259.94px;
+  border-radius: 0 0 var(--br-3xs) var(--br-3xs);
+  background-color: var(--color-white);
+  height: 178.06px;
+}
+.cardTitle {
+  position: relative;
+  height: 10.22%;
+  width: 81.82%;
+  
+  letter-spacing: 0.01em;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-decoration: none; 
+  color: var(--24272-a, #3F454A);
+
+}
+.descriptionCard {
+  position: relative;
+
+  font-size: var(--small-text-14-size);
+  line-height: 24px;
+  display: inline-block;
+  width: 212.14px;
+  height: 82.84px;
+  font-family: Open Sans;
+  color: var(--24272-a, #3F454A);
+}
+.rectangleParent {
+  position: absolute;
+  top: 691px;
+  left: 441px;
+  box-shadow: var(--shadow-box);
+  width: 270px;
+  height: 438px;
+}
+
+.articlesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+}
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 691px;
+  margin-left: 441px;
+  max-width: 890px; 
+  width: 100%; 
+}
+
+.link {
+  align-items: center;
+  text-decoration: none;
+}
+
+.cardBody {
+  width: calc(33.33% - 10px); 
+  max-width: calc(33.33% - 10px); 
+  margin-bottom: 20px; 
+  box-shadow: var(--shadow-box);
+  height: 438px;
+}
+
+
+
+.groupChild {
+  max-width: 100%;
+}
+
+.cardTitle {
+  font-size: 18px; 
+}
+
+.descriptionCard {
+  font-size: 14px; 
+}
+
+
+
+.rectangleContainer {
+  position: absolute;
+  top: 691px;
+  left: 1041px;
+  box-shadow: var(--shadow-box);
+  width: 270px;
+  height: 438px;
+}
+.groupChild3 {
+  position: absolute;
+  top: 204px;
+  left: 0;
+  border-radius: 0 0 var(--br-3xs) var(--br-3xs);
+  background-color: var(--color-white);
+  width: 270px;
+  height: 234px;
+}
+.curabiturVulputatePlacerat3 {
+  position: absolute;
+  height: 10.22%;
+  width: 83.12%;
+  top: 55.7%;
+  left: 9.74%;
+  letter-spacing: 0.01em;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+}
+.malesuadaTortorFacilisi3 {
+  position: absolute;
+  top: 310.16px;
+  left: 26.3px;
+  font-size: var(--small-text-14-size);
+  line-height: 24px;
+  display: inline-block;
+  width: 212.14px;
+  height: 82.84px;
+}
+.groupDiv,
+.rectangleParent1,
+.rectangleParent2 {
+  position: absolute;
+  top: 691px;
+  left: 741px;
+  box-shadow: var(--shadow-box);
+  width: 270px;
+  height: 438px;
+}
+.rectangleParent1,
+.rectangleParent2 {
+  top: 1164.93px;
+}
+.rectangleParent2 {
+  top: 1165px;
+  left: 443px;
+}
+
+.blankLine,
+.todos {
+  margin: 0;
+}
+.todos {
+  color: black
+}
+
+
+.errorText {
+  color: red; 
+  font-size: 14px; 
+  margin-top: 4px; 
+}
+
+
+
+.todosProductosRecetasContainer {
+  position: absolute;
+  top: 715px;
+  left: 160px;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  line-height: 23px;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 198px;
+}
+
+.noUnderline {
+  text-decoration: none;
+}
+
+.menuList {
+  padding: 0; 
+  list-style: none; 
+}
+
+.menuList li {
+  margin-bottom: 10px; 
+}
+
+.menuList li a {
+
+  text-decoration: none;
+  transition: color 0.3s; 
+}
+
+.menuList li a:hover {
+  color: var(--color-goldenrod); 
+}
+.groupIcon {
+  position: absolute;
+  height: 0.51%;
+  width: 0.97%;
+  top: 32.41%;
+  right: 73.12%;
+  bottom: 67.08%;
+  left: 25.9%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.groupChild8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  background-color: var(--color-goldenrod);
+  width: 170px;
+  height: 55px;
+        border-color: transparent;
+  color: white;   
+  
+        box-shadow: 0 0 0 transparent;  
+
+        &:hover { 
+          background-color: #009CD9;
+          color: white;
+        }
+
+        &:active {
+          background-color: #CFCFCF;  
+    animation: textBlink 0.5s infinite;
+    transition: background-color 0.01s;
+    color: #E7E7E7;
+    
+        }
+}
+.enviar {
+  position: absolute;
+  height: 43.64%;
+  width: 42.94%;
+  top: 27.27%;
+  left: 28.82%;
+  letter-spacing: 0.03em;
+  line-height: 26px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.ejercicioFrontEndInner,
+.rectangleParent3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 170px;
+  height: 55px;
+}
+.ejercicioFrontEndInner {
+
+  left: 646px;
+  top: 2043px;
+  text-align: center;
+  font-size: var(--texto-boton-size);
+  color: var(--color-white);
+  font-family: var(--texto-boton);
+}
+
+
+.elSecretoDeContainer1 {
+  line-break: anywhere;
+  width: 100%;
+}
+.elSecretoDeContainer {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  line-height: 100px;
+  display: flex;
+  align-items: center;
+}
+.elSecretoDeTuCocinaWrapper {
+  position: absolute;
+  height: 8.3%;
+  width: 44.1%;
+  top: 8.8%;
+  right: 46.74%;
+  bottom: 82.9%;
+  left: 9.17%;
+  font-size: 120px;
+  font-family: var(--h2);
+}
+
+
+.textlabel {
+  position: absolute;
+  height: 41.57%;
+  top: 0;
+  left: 0;
+  line-height: 24px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.inputtextoChild {
+
+  padding-top: 1em;
+  padding-bottom: 1em; 
+  font-size: var(--small-text-14-size);
+  height: 56.18%;
+width: 100%;
+  left: 0px;
+  background-color: var(--color-white);
+  border: 1px solid var(--cfcfcf);
+  box-sizing: border-box;
+  color: #3f4544;
+  text-align: left; 
+  padding-left: 22px; 
+  &:focus {
+    border: 1px solid var(--color-goldenrod);
+    outline: none; 
+  }
+}
+
+.textlabel1 {
+  color: red;
+  font-weight: bold;
+}
+
+/* styles.module.scss */
+
+
+.buttonLoading:disabled {
+  background-color: #CFCFCF; 
+  cursor: not-allowed; 
+}
+
+
+
+
+.inputtextoChild2 {
+  position: relative;
+  font-size: var(--small-text-14-size);
+  height: 56.18%;
+width: 100%;
+  left: 0px;
+  background-color: var(--color-white);
+  border: 1px solid var(--cfcfcf);
+  box-sizing: border-box;
+  color: #3f4544;
+  text-align: left;
+  padding-left: 22px; 
+  &:focus {
+    border: 1px solid var(--color-goldenrod);
+    outline: none; 
+  }
+}
+
+
+
+
+
+.name{
+  width: 351px;
+  position: absolute;
+  height: 3.69%;
+
+  top: 1791px;
+
+  bottom: 21.99%;
+  left: 366.85px;
+  font-size: var(--font-size-smi);
+  color: var(--color-gray);
+
+}
+
+.Footer {
+  position: relative!important; 
+  z-index: 1; 
+ 
+}
+
+.pageContainer {
+  max-height: 916px; 
+  overflow-y: auto; 
+}
+
+
+.lastname{
+  width: 351px;
+  position: absolute;
+  height: 3.69%;
+
+  top: 1791px;
+
+  bottom: 21.99%;
+  left: 740px;
+  font-size: var(--font-size-smi);
+  color: var(--color-gray);
+
+}
+
+
+.mail {
+  width: 351px;
+  position: absolute;
+  height: 3.69%;
+  top: 1889.86px;
+  bottom: 21.99%;
+  left: 366.85px;
+  font-size: var(--font-size-smi);
+  color: var(--color-gray);
+ 
+}
+
+
+.phone{
+  width: 351px;
+  position: absolute;
+  height: 3.69%;
+
+  top: 1889.86px;
+
+  bottom: 21.99%;
+  left: 740px;
+  font-size: var(--font-size-smi);
+  color: var(--color-gray);
+
+}
+
+
+
+.inputtexto {
+  width: 351px;
+  position: absolute;
+  height: 3.69%;
+
+  top: 1830px;
+
+  bottom: 21.99%;
+  left: 740px;
+  font-size: var(--font-size-smi);
+  color: var(--color-gray);
+  
+}
+.inputtexto1 {
+  width: 351px;
+  top: 1928.86px;
+  bottom: 17.89%;
+  left: 740px;
+  position: absolute;
+  height: 3.69%;
+  
+  font-size: var(--font-size-smi);
+  color: var(--color-gray);
+}
+.inputtexto2 {
+  width: 351px;
+  top: 1928.86px;
+  bottom: 17.89%;
+  left: 366.85px;
+  position: absolute;
+  height: 3.69%;
+  
+  font-size: var(--font-size-smi);
+  color: var(--color-gray);
+}
+
+.inputtexto3 {
+  width: 351px;
+  position: absolute;
+  bottom: 17.89%;
+  height: 3.69%;
+
+  top: 1830px;
+
+  left: 366px;
+  font-size: var(--font-size-smi);
+  color: var(--color-gray);
+}
+
+.inputtextoChild1 {
+  position: absolute;
+  height: 56.18%;
+
+  top: 43.82%;
+  right: 5.18%;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-white);
+  border: 1px solid var(--cfcfcf);
+  box-sizing: border-box;
+  color: #3f4544;
+  text-align: left; 
+  padding-left: 22px; 
+  &:focus {
+    border: 1px solid var(--color-goldenrod);
+    outline: none; 
+  }
+}
+
+.nombre {
+  position: absolute;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+}
+.nombre {
+  height: 41.57%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  text-transform: uppercase;
+}
+
+.ejercicioFrontEnd {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 2410px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--a);
+  font-family: var(--small-text-14);
+}
+
+.label {
+  height: 40px;
+  width: 614px;
+}
+
+.label .textwrapper {
+  font-family: var(--h2);
+  color: var(--24272-a, #3F454A);
+  
+  font-size: var(--h2-size);
+  font-style: var(--h2-font-style);
+  font-weight: var(--h2-font-weight);
+
+  height: 40px;
+  left: 420px;
+  letter-spacing: var(--h2-letter-spacing);
+  line-height: var(--h2-line-height);
+  position: absolute;
+  text-align: center;
+  top: 1654px;
+  white-space: nowrap;
+  width: 614px;
+}
+
+/* Estilos del componente Footer */
+.Footer {
+  margin-top: 50px; /* Ajusta la cantidad de espacio que deseas */
+}
