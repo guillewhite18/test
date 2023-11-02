@@ -1,5 +1,3 @@
-// filters.ts
-
 import axios from 'axios';
 
 export const getFilteredResults = async (filter: string) => {
