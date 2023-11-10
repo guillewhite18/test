@@ -20,6 +20,27 @@
   object-fit: cover;
 }
 
+.animation {
+  width: 250px;
+  height: 250px;
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.animationContainer {
+  width: 200px;
+  height: 200px;
+  position: fixed;
+  top: 400px;
+  left: 50%; 
+  transform: translateX(-50%); 
+}
+
+
 .linkButton {
   text-transform: uppercase; 
   color: black; 
@@ -34,8 +55,14 @@
   color: goldenrod; 
 }
 
+.cardTitle {
+  color: black; 
+  transition: color 0.3s; 
+}
 
-
+.cardTitle:hover {
+  color: goldenrod; 
+}
 
 .heroFondoChild {
   top: 512.72px;

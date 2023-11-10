@@ -6,12 +6,15 @@ import Footer from '@/layouts/Footer';
 import Header from '@/layouts/Header';
 import React, { useEffect, useState } from 'react';
 import { getFilteredResults } from './api/filters';
+import Loading from '../components/Loading';
 
 const inter = Inter({ subsets: ['latin'] });
-
 export default function Home() {
   const [selectedItem, setSelectedItem] = useState('consejos');
-  const [resultData, setResultData] = useState<Array<{ id: number; title: string; content: string; url: string; image: string }>>([]);
+  const [resultData, setResultData] = useState<
+    Array<{ id: number; title: string; content: string; url: string; image: string }>
+  >([]);
+  const [shouldLoadAnimation, setShouldLoadAnimation] = useState(false);
 
   useEffect(() => {
     handleNavItemClick(selectedItem);
@@ -19,11 +22,14 @@ export default function Home() {
 
   const handleNavItemClick = async (item: string) => {
     try {
+      setShouldLoadAnimation(true);
       const data = await getFilteredResults(item);
       setSelectedItem(item);
       setResultData(data);
     } catch (error) {
       console.error(`Error al obtener los resultados para "${item}":`, error);
+    } finally {
+      setShouldLoadAnimation(false);
     }
   };
 
@@ -48,6 +54,9 @@ export default function Home() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const handleAnimationHide = () => {
+  };
+
   return (
     <>
       <Head>
@@ -62,7 +71,7 @@ export default function Home() {
           <Header />
 
           <div className={styles.ejercicioFrontEndItem} />
-
+          <Loading shouldLoadAnimation={shouldLoadAnimation} onHideAnimation={handleAnimationHide} />
           <div className={styles.pageContainer}>
             <div className={styles.articlesContainer}>
               {resultData.map((item) => (
@@ -120,12 +129,7 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-
-          
-
-<div className={styles.foot}><Footer /></div>
-
-          
+<div className={styles.foot}><Footer /></div>   
         </div>
       </main>
     </>

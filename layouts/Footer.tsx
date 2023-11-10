@@ -1,67 +1,84 @@
 import React, { useState } from "react";
-import { Formik, Form, Field, FormikHelpers } from "formik";
+import { Formik, Form, Field, FormikHelpers, FormikValues } from "formik";
 import * as Yup from 'yup';
 import { FormControl, Input, FormErrorMessage, Button } from "@chakra-ui/react";
 import styles from '@/styles/Home.module.scss';
+import Swal from 'sweetalert2';
 import axios from 'axios';
 
-type YourFormValuesType = {
-  firstname: string;
-  lastname: string;
-  email: string;
-  phone: number; 
+interface YourFormValuesType extends FormikValues {
+  firstname?: string;
+  lastname?: string;
+  email?: string;
+  phone?: number | null;
+}
+const initialValues: YourFormValuesType = {
+  firstname: "",
+  lastname: "",
+  email: "",
+  phone: null, 
 };
-
-const initialValues = {
-  firstname: "Jhon",
-  lastname: "Doe",
-  email: "jdoe@email.com",
-  phone: 994738488, 
-};
-
 const validationSchema = Yup.object({
-  lastname: Yup.string().required("El apellido es obligatorio"),
-  phone: Yup.number().required("El teléfono es obligatorio"),
+  firstname: Yup.string()
+    .required("El nombre es obligatorio")
+    .test('no-numbers', 'No se permiten números en el nombre', (value) => {
+      return !/\d/.test(value);
+    }),
+  lastname: Yup.string()
+    .required("El apellido es obligatorio")
+    .test('no-numbers', 'No se permiten números en el apellido', (value) => {
+      return !/\d/.test(value);
+    }),
   email: Yup.string()
     .required("El correo es obligatorio")
     .email("Ingrese una dirección de correo válida"),
-  firstname: Yup.string().required("El nombre es obligatorio"),
+    phone: Yup.string()
+    .nullable()
+    .required("El teléfono es obligatorio")
+    .test('no-letters', 'No se permiten letras en el teléfono', (value) => {
+      return !/[a-zA-Z]/.test(value || ""); 
+    }),
 });
 
 const Footer = () => {
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-  const handleSubmit = async (values: YourFormValuesType, { setSubmitting }: FormikHelpers<YourFormValuesType>) => {
+  const handleSubmit = async (values: YourFormValuesType, { setSubmitting }: { setSubmitting: (isSubmitting: boolean) => void }) => {
     try {
       const response = await axios.post('/api/contact', values);
-    
+  
       if (response.data.success) {
-        setSuccessMessage(response.data.message);
-        setErrorMessage('');
-        window.alert(response.data.message); 
+        Swal.fire({
+          icon: 'success',
+          title: 'Éxito',
+          text: response.data.message,
+        });
       } else {
-        setErrorMessage(response.data.message);
-        setSuccessMessage('');
-        window.alert(response.data.message);
+        Swal.fire({
+          icon: 'error',
+          title: 'Error',
+          text: response.data.message,
+        });
       }
+      
       setSubmitting(false);
-    } catch (error: any) {
+    } catch (error: any) { 
       if (error.response) {
-
-        console.error('Error al enviar los datos:', error);
-        window.alert('Error al enviar los datos: ' + JSON.stringify(error.response.data));
+        Swal.fire({
+          icon: 'error',
+          title: 'Error',
+          text: `Error al enviar los datos: ${JSON.stringify(error.response.data)}`,
+        });
       } else {
-
-        console.error('Error al enviar los datos:', error);
-        window.alert('Error al enviar los datos: Hubo un problema en la solicitud');
+        Swal.fire({
+          icon: 'error',
+          title: 'Error',
+          text: 'Error al enviar los datos: Hubo un problema en la solicitud',
+        });
       }
-      setErrorMessage('Error al enviar los datos');
-      setSuccessMessage(''); 
       setSubmitting(false);
     }
-    
-}
-
+  };
 
   return (
     <footer>
@@ -144,12 +161,8 @@ const Footer = () => {
 >
   {isSubmitting ? 'Enviando...' : 'Enviar'}
 </Button>
-
-
             </div>
     </div>
-
-
           </Form>
         )}
       </Formik>
